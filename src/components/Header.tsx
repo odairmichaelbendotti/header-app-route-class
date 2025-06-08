@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 function Header() {
     return (
@@ -6,30 +5,30 @@ function Header() {
             <div className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-2">
                         <div className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center">
                             <span className="text-white font-bold text-xl">L</span>
                         </div>
                         <span className="text-xl font-semibold text-gray-800">Logo</span>
-                    </Link>
+                    </div>
 
                     {/* Navigation Links - Desktop */}
                     <nav className="hidden md:flex items-center space-x-8">
-                        <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        <div className="text-gray-600 hover:text-blue-600 transition-colors">
                             Home
-                        </Link>
-                        <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        </div>
+                        <div className="text-gray-600 hover:text-blue-600 transition-colors">
                             About
-                        </Link>
-                        <Link href="/services" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        </div>
+                        <div className="text-gray-600 hover:text-blue-600 transition-colors">
                             Services
-                        </Link>
-                        <Link href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        </div>
+                        <div className="text-gray-600 hover:text-blue-600 transition-colors">
                             Blog
-                        </Link>
-                        <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        </div>
+                        <div className="text-gray-600 hover:text-blue-600 transition-colors">
                             Contact
-                        </Link>
+                        </div>
                     </nav>
 
                     {/* CTA Buttons */}
@@ -65,21 +64,21 @@ function Header() {
             {/* Mobile Menu - Hidden by default */}
             <div className="md:hidden hidden bg-white border-t">
                 <div className="container mx-auto px-4 py-2 flex flex-col space-y-2">
-                    <Link href="/" className="py-2 text-gray-600 hover:text-blue-600">
+                    <div className="py-2 text-gray-600 hover:text-blue-600">
                         Home
-                    </Link>
-                    <Link href="/about" className="py-2 text-gray-600 hover:text-blue-600">
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-blue-600">
                         About
-                    </Link>
-                    <Link href="/services" className="py-2 text-gray-600 hover:text-blue-600">
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-blue-600">
                         Services
-                    </Link>
-                    <Link href="/blog" className="py-2 text-gray-600 hover:text-blue-600">
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-blue-600">
                         Blog
-                    </Link>
-                    <Link href="/contact" className="py-2 text-gray-600 hover:text-blue-600">
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-blue-600">
                         Contact
-                    </Link>
+                    </div>
                     <div className="flex flex-col space-y-2 pt-2 border-t">
                         <button className="w-full py-2 text-gray-600 hover:text-blue-600 text-left">
                             Login
